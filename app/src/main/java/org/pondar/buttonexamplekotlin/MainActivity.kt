@@ -1,7 +1,7 @@
 package org.pondar.buttonexamplekotlin
 
 import android.app.Dialog
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -15,17 +15,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Log.d("MainActivity", "Startup finished")
-       /* btnHello.setOnClickListener( {
-            var toast:  Toast = Toast.makeText(getApplicationContext(),"Hello class",Toast.LENGTH_LONG)
+        btnHello.text = "Button"
+        btnHello.setOnClickListener({
+            val toast = Toast.makeText(getApplicationContext(), "Hello class", Toast.LENGTH_LONG)
             toast.show()
 
-        }) */
+        })
 
     }
 
 
-    fun sayHello(view: View)
-    {
+    fun sayHello(view: View) {
         val dialog = Dialog(this)
 
         dialog.setTitle("greetings") //hardcoded - should be in strings.xml!

@@ -1,6 +1,8 @@
 package org.pondar.buttonexamplekotlin
 
-open class Person(var name:String,var age:Int)
+data class Person(val name:String, val age:Int)
+
+open class Person2(var name:String,var age:Int)
 {
 
     constructor(name:String) : this(name,0)
