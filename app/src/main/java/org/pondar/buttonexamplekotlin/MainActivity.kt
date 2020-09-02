@@ -16,11 +16,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         Log.d("MainActivity", "Startup finished")
         btnHello.text = "Button"
-        btnHello.setOnClickListener({
+        btnHello.setOnClickListener {
             val toast = Toast.makeText(getApplicationContext(), "Hello class", Toast.LENGTH_LONG)
             toast.show()
 
-        })
+        }
 
     }
 
