@@ -4,6 +4,7 @@ import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Gravity
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
@@ -15,11 +16,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Log.d("MainActivity", "Startup finished")
-        btnHello.text = "Button"
+        btnHello.text = getString(R.string.button_label)
         btnHello.setOnClickListener {
             val toast = Toast.makeText(getApplicationContext(), "Hello class", Toast.LENGTH_LONG)
             toast.show()
-
         }
 
     }
@@ -28,9 +28,8 @@ class MainActivity : AppCompatActivity() {
     fun sayHello(view: View) {
         val dialog = Dialog(this)
 
+
         dialog.setTitle("greetings") //hardcoded - should be in strings.xml!
-
-
         val textView = TextView(this)
         //textView.setText("Hello World"); //Hardcoded - not best.
         textView.setText(R.string.hello_world) //refers to strings.xml  better!

@@ -6,16 +6,16 @@
 
     <Button
         android:id="@+id/btnHello"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:onClick="sayHello"
-        android:text="Say Hello" />
+        android:text="@string/say_hello" />
     <!-- the onClick means that the sayHello method will be called -->
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"> <!-- Notice the orientation-->
 
         <TextView
@@ -31,5 +31,12 @@
             android:text="@string/someMoreText" />
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:text="@string/hello_and_good_morning"
+        />
 
 </LinearLayout>

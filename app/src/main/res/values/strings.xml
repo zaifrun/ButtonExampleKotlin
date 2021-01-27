@@ -6,4 +6,7 @@
     <string name="greetings">Greetings</string>
     <string name="someText">Some test for the user...</string>
     <string name="someMoreText">Some more text...</string>
+    <string name="hello_and_good_morning">Hello and good morning</string>
+    <string name="say_hello">Say Hello</string>
+    <string name="button_label">Button</string>
 </resources>
