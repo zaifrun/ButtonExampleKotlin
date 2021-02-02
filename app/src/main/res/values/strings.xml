@@ -3,6 +3,7 @@
 
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="hello_class">Hello Class</string>
     <string name="greetings">Greetings</string>
     <string name="someText">Some test for the user...</string>
     <string name="someMoreText">Some more text...</string>

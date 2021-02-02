@@ -19,13 +19,16 @@ class MainActivity : AppCompatActivity() {
         Log.d("MainActivity", "Startup finished")
         btnHello.text = getString(R.string.button_label)
         btnHello.setOnClickListener {
-            val toast = Toast.makeText(getApplicationContext(), "Hello class", Toast.LENGTH_LONG)
+            Log.d("button","Button clicked!")
+            val toast = Toast.makeText(applicationContext, "Hello class", Toast.LENGTH_LONG)
             toast.show()
         }
 
     }
 
 
+    //this function could also be a click listener
+    //if we set in the .xml code for the button
     fun sayHello(view: View) {
         val dialog = Dialog(this)
 
