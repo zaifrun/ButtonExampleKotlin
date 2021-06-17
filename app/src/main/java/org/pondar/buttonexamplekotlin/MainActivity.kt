@@ -4,21 +4,26 @@ import android.app.Dialog
 
 import android.os.Bundle
 import android.util.Log
-import android.view.Gravity
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
+import org.pondar.buttonexamplekotlin.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var binding: ActivityMainBinding
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+
         Log.d("MainActivity", "Startup finished")
-        btnHello.text = getString(R.string.button_label)
-        btnHello.setOnClickListener {
+        binding.btnHello.text = getString(R.string.button_label)
+        binding.btnHello.setOnClickListener {
             Log.d("button","Button clicked!")
             val toast = Toast.makeText(applicationContext, "Hello class", Toast.LENGTH_LONG)
             toast.show()
