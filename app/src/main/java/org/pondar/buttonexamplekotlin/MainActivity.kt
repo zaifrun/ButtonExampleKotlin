@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         Log.d("MainActivity", "Startup finished")
         binding.btnHello.text = getString(R.string.button_label)
         binding.btnHello.setOnClickListener {
-            Log.d("button","Button clicked!")
+            Log.d("button", "Button clicked!")
             val toast = Toast.makeText(applicationContext, "Hello class", Toast.LENGTH_LONG)
             toast.show()
         }
